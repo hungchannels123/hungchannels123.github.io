@@ -2,6 +2,8 @@
 <html>
 
 	<head>
+		<!-- Include a required theme -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 		<meta charset="utf-8">
 		<title>𝙃 𝙐 𝙉 𝙂 𝘾 𝙃 𝘼 𝙉 𝙉 𝙀 𝙇 𝙎 <3</title>
 		<style type="text/css">
@@ -128,13 +130,11 @@
 				background-color: rgb(216, 25, 25);
 			}
 		</style>
+		<!---->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="https://hungchannels123.github.io/hidden/assets/images/avt.png" type="image/x-icon">
 	</head>
-	<body>	
-		<audio autoplay="">
-			<source src="https://hungchannels123.github.io/music/kidsai-GIAYPHUT.mp3" type="audio/mp3">
-		</audio>
+	<body onclick="audio.play()">	
 		<div class="content">
 			<img src="https://hungchannels123.github.io/hidden/assets/images/avt.png" alt="">
 			<div class="content_r clearfix">
@@ -155,6 +155,20 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			var audio = new Audio('https://hungchannels123.github.io/music/kidsai-GIAYPHUT.mp3');
+      
+      audio.oncanplaythrough = function(){
+      audio.play();
+      }
+      
+      audio.loop = true;
+      
+      audio.onended = function(){
+      audio.play();
+      }
+   
+		</script>
         <script>
 
 //▬▬▬▬▬▬▬▬▬▬
@@ -328,10 +342,21 @@ img.src = "https://i.imgur.com/R9XUjfF.png";
 				}
 			}
 		
+			
 
 
 //////////////////////////////////////////////////////////////
 
         </script>
+
+		<script>
+Swal.fire();
+
+Swal.fire(
+  'Hung Channels',
+  'Welcome to the website !',
+  'success'
+)
+		</script>
 	</body>
 </html>
