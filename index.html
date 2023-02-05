@@ -1,255 +1,337 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html>
 
-<link rel="shortcut icon" href="assets/images/miniavt.png" type="image/x-icon">
+	<head>
+		<meta charset="utf-8">
+		<title>𝙃 𝙐 𝙉 𝙂 𝘾 𝙃 𝘼 𝙉 𝙉 𝙀 𝙇 𝙎 <3</title>
+		<style type="text/css">
+			/* CSS Document */
+			* {
+				margin: 0;
+				padding: 0;
+			}
 
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+			a {
+				text-decoration: none;
+			}
 
-<link rel="stylesheet" href="assets/css/styles.css">
-<title>Phùng Phi Hùng - Thông tin cá nhân</title>
-</head>
-<body>
+			.clearfix:after {
+				content: "";
+				display: block;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
 
-<header class="profile container">
+			.clearfix {
+				*zoom: 1;
+			}
 
-<i class="ri-moon-line change-theme" id="theme-button"></i>
-<div class="profile__container grid">
-<div class="profile__data">
-<div class="profile__border">
-<div class="profile__perfil">
+			body {
+				background: url(https://www.dmoe.cc/random.php) no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
 
-<img src="assets/images/avt.png" alt="avt" style="width:540px;height:120px;">
-</div>
-</div>
-<h2 class="profile__name">Phùng Phi Hùng</h2>
-<h3 class="profile__profession">Developer - Designer - Coder</h3>
-<ul class="profile__social">
-<a href="https://www.instagram.com/hungchannels.tv" target="_blank" class="profile__social-link">
-<i class="ri-instagram-line"></i>
-</a>
-<a href="https://www.facebook.com/HungChannels.TV" target="_blank" class="profile__social-link">
-<i class="ri-facebook-fill"></i>
-</a>
-<a href="https://github.com/hungchannels123" target="_blank" class="profile__social-link">
-<i class="ri-github-line"></i>
-</a>
-</ul>
-</div>
-<div class="profile__info grid">
-<div class="profile__info-group">
-<h3 class="profile__info-number">5</h3>
-<p class="profile__info-description">
-Years of <br> work
-</p>
-</div>
-<div class="profile__info-group">
-<h3 class="profile__info-number">+124</h3>
-<p class="profile__info-description">
-Completed <br> projects
-</p>
-</div>
-<div class="profile__info-group">
-<h3 class="profile__info-number">96</h3>
-<p class="profile__info-description">Satisfied <br> customers</p>
-</div>
-</div>
-<div class="profile__buttons">
+			.content {
+				width: 900px;
+				height: 500px;
+				margin: 200px auto 0 auto;
+				border-radius: 10px;
+				background-color: rgba(236, 236, 236, 0.59);
+				transition: all 1.0s;
+				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
+			}
 
-<a href="/thongtinthanhtoan" class="button">
-Bank info<i class="ri-bank-line"></i>
-</a>
-<div class="profile__buttons-small">
+			.content img {
+				float: left;
+				width: 200px;
+				height: 200px;
+				margin: 150px 0 0 80px;
+				border-radius: 100px;
 
-<a href="https://zalo.me/0974612360" target="_blank" class="button button__small button__gray">
-<i class="ri-whatsapp-line"></i>
-</a>
+			}
 
-<a href="https://m.me/HungChannels.TV" target="_blank" class="button button__small button__gray">
-<i class="ri-messenger-line"></i>
-</a>
-</div>
-</div>
-</div>
-</header>
+			.content:hover {
+				box-shadow: 0px 0px 20px rgb(0, 162, 255);
+			}
 
-<main class="main">
-<section class="filters container">
+			.content_r {
+				float: right;
+				width: 500px;
+				margin: 80px 60px 0 0;
+				/*	background-color: pink;*/
+			}
 
-<ul class="filters__content">
-<button class="filters__button filter-tab-active" data-target="#projects">
-Profile
-</button>
-<button class="filters__button" data-target="#skills">
-Skills
-</button>
-</ul>
-<div class="filters__sections">
+			.content_l {
+				float: left;
+				width: 100%;
+				text-align: center;
+			}
 
-<div class="projects__content grid filters__active" data-content id="projects">
-<article class="projects__card">
+			.content_l h5 {
 
-<img src="assets/images/fb.png" alt="" class="projects__img">
-<div class="projects__modal">
-<div>
-<span class="projects__subtitle">Facebook</span>
-<h3 class="projects__title">Phùng Phi Hùng</h3>
-<a href="https://www.facebook.com/HungChannels.TV" class="projects__button button button__small">
-<i class="ri-eye-fill"></i>
-</a>
-</div>
-</div>
-</article>
-<article class="projects__card">
-<img src="assets/images/zalo.png" alt="" class="projects__img">
-<div class="projects__modal">
-<div>
-<span class="projects__subtitle">Zalo</span>
-<h3 class="projects__title">Phùng Phi Hùng</h3>
-<a href="https://zalo.me/0974612360" class="projects__button button button__small">
-<i class="ri-eye-fill"></i>
-</a>
-</div>
-</div>
-</article>
-<article class="projects__card">
-<img src="assets/images/git.png" alt="" class="projects__img">
-<div class="projects__modal">
-<div>
-<span class="projects__subtitle">Github</span>
-<h3 class="projects__title">Hùng Channels</h3>
-<a href="https://github.com/hungchannels123" class="projects__button button button__small">
-<i class="ri-eye-fill"></i>
-</a>
-</div>
-</div>
-</article>
-<article class="projects__card">
-<img src="assets/images/pin.png" alt="" class="projects__img">
-<div class="projects__modal">
-<div>
-<span class="projects__subtitle">Pinterest</span>
-<h3 class="projects__title">Hùng Channels</h3>
-<a href="https://pinterest.com/hungchannels" class="projects__button button button__small">
-<i class="ri-eye-fill"></i>
- </a>
-</div>
-</div>
-</article>
-</div>
+				font-size: 17px;
+			}
 
-<div class="skills__content grid" data-content id="skills">
-<div class="skills__area">
-<h3 class="skills__title">Frontend Developer</h3>
-<div class="skills__box">
-<div class="skills__group">
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">HTML</h3>
-<span class="skills__level">Basic</span>
-</div>
-</div>
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">CSS</h3>
-<span class="skills__level">Advanced</span>
-</div>
-</div>
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">JavaScript</h3>
-<span class="skills__level">Intermediate</span>
-</div>
-</div>
-</div>
-<div class="skills__group">
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">React</h3>
-<span class="skills__level">Intermediate</span>
-</div>
-</div>
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">Bootstrap</h3>
-<span class="skills__level">Intermediate</span>
-</div>
-</div>
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">Git</h3>
-<span class="skills__level">Intermediate</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="skills__area">
-<h3 class="skills__title">Backend Developer</h3>
-<div class="skills__box">
-<div class="skills__group">
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">PHP</h3>
-<span class="skills__level">Intermediate</span>
-</div>
-</div>
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">MySQL</h3>
-<span class="skills__level">Advance</span>
-</div>
-</div>
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">Firebase</h3>
-<span class="skills__level">Intermediate</span>
-</div>
-</div>
-</div>
-<div class="skills__group">
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">Python</h3>
-<span class="skills__level">Basic</span>
-</div>
-</div>
-<div class="skills__data">
-<i class="ri-checkbox-circle-line"></i>
-<div>
-<h3 class="skills__name">Node Js</h3>
-<span class="skills__level">Intermediate</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
+			.bio {
+				margin-top: 10px;
+				color: #1F2023;
+				font-size: 18px;
+			}
 
-<footer class="footer container">
-<span class="footer__copy">
-&#169; <a href='https://www.facebook.com/HungChannels.TV'> Hùng Channels </a> All rigths reserved
-</span>
-</footer>
+			.color_1 {
+				color: #4855EC;
+				font-size: 18px;
+			}
 
-<script src="assets/js/scrollreveal.min.js"></script>
+			.deeppink {
+				color: deeppink;
+			}
 
-<script src="assets/js/main.js"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78757fa83936042a","version":"2022.11.3","r":1,"token":"daf92eb4722b46df8248133679221441","si":100}' crossorigin="anonymous"></script>
-</body>
+			.link {
+				margin-top: 30px;
+			}
+
+			.link a {
+				display: block;
+				float: left;
+				width: 120px;
+				height: 45px;
+				margin: 5px 5px 0 0;
+				/*	padding: 0 15px;*/
+				color: #fff;
+				line-height: 45px;
+				transition: all 0.8s;
+				/*	background-color: deeppink;*/
+
+			}
+
+			.link a:hover {
+				background-color: rgba(0, 0, 0, 0.35);
+                box-shadow: 0px 0px 20px rgb(61, 196, 230);
+			}
+
+			.black {
+				background-color: rgb(36, 35, 35);
+			}
+
+			.dodgerblue {
+				background-color: dodgerblue;
+			}
+
+			.green {
+				background-color: rgb(0, 211, 248);
+			}
+
+			.red {
+				background-color: rgb(216, 25, 25);
+			}
+		</style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://hungchannels123.github.io/assets/images/avt.png" type="image/x-icon">
+	</head>
+	<body>
+		<div class="content">
+			<img src="https://hungchannels123.github.io/assets/images/avt.png" alt="">
+			<div class="content_r clearfix">
+				<div class="content_l clearfix">
+					<h2>Привет, HungChannels say hi to you <3</h2>
+					<p class="bio">" Welcome to my main website ! "</p>
+					<p class="bio">Không yêu đừng thương 💔</p>
+					<br>
+					<p class="color_1">Always waiting for real love 💔</p>
+					<!-- <p class="color_1"></p> -->
+					<br>
+					<p class="deeppink">Nếu còn cơ hội anh sẽ nói với em ba chữ này, anh yêu em 😊</p>
+					<div class="link">
+						<a href="https://www.facebook.com/HungChannels.TV" class="dodgerblue" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+						<a href="https://github.com/hungchannels123" class="black" target="_blank"><i class="fa fa-github"></i> Github</a>
+						<a href="https://t.me/hungchannels123" class="green" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
+						<a href="https://www.youtube.com/@hungchannels" class="red" target="_blank"><i class="fa fa-youtube-play"></i> Youtube</a>
+                    
+                    </div>    <br>    <br>    <br>    <br> 
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1459436024&auto=1&height=66"></iframe>
+				</div>
+			</div>
+		</div>
+        <script>
+
+//▬▬▬▬▬▬▬▬▬▬
+   // HOA ANH DAO
+//▬▬▬▬▬▬▬▬▬▬
+var stop, staticx;
+var img = new Image();
+img.src = "https://i.imgur.com/R9XUjfF.png";
+
+			function Sakura(x, y, s, r, fn) {
+				this.x = x;
+				this.y = y;
+				this.s = s;
+				this.r = r;
+				this.fn = fn;
+			}
+
+			Sakura.prototype.draw = function(cxt) {
+				cxt.save();
+				var xc = 40 * this.s / 4;
+				cxt.translate(this.x, this.y);
+				cxt.rotate(this.r);
+				cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)
+				cxt.restore();
+			}
+
+			Sakura.prototype.update = function() {
+				this.x = this.fn.x(this.x, this.y);
+				this.y = this.fn.y(this.y, this.y);
+				this.r = this.fn.r(this.r);
+				if(this.x > window.innerWidth ||
+					this.x < 0 ||
+					this.y > window.innerHeight ||
+					this.y < 0
+				) {
+					this.r = getRandom('fnr');
+					if(Math.random() > 0.4) {
+						this.x = getRandom('x');
+						this.y = 0;
+						this.s = getRandom('s');
+						this.r = getRandom('r');
+					} else {
+						this.x = window.innerWidth;
+						this.y = getRandom('y');
+						this.s = getRandom('s');
+						this.r = getRandom('r');
+					}
+				}
+			}
+
+			SakuraList = function() {
+				this.list = [];
+			}
+			SakuraList.prototype.push = function(sakura) {
+				this.list.push(sakura);
+			}
+			SakuraList.prototype.update = function() {
+				for(var i = 0, len = this.list.length; i < len; i++) {
+					this.list[i].update();
+				}
+			}
+			SakuraList.prototype.draw = function(cxt) {
+				for(var i = 0, len = this.list.length; i < len; i++) {
+					this.list[i].draw(cxt);
+				}
+			}
+			SakuraList.prototype.get = function(i) {
+				return this.list[i];
+			}
+			SakuraList.prototype.size = function() {
+				return this.list.length;
+			}
+
+			function getRandom(option) {
+				var ret, random;
+				switch(option) {
+					case 'x':
+						ret = Math.random() * window.innerWidth;
+						break;
+					case 'y':
+						ret = Math.random() * window.innerHeight;
+						break;
+					case 's':
+						ret = Math.random();
+						break;
+					case 'r':
+						ret = Math.random() * 5;
+						break;
+					case 'fnx':
+						random = -0.5 + Math.random() * 1;
+						ret = function(x, y) {
+							return x + 0.5 * random - 1;
+						};
+						break;
+					case 'fny':
+						random = 0.5 + Math.random() * 0.5
+						ret = function(x, y) {
+							return y + random;
+						};
+						break;
+					case 'fnr':
+						random = Math.random() * 0.01;
+						ret = function(r) {
+							return r + random;
+						};
+						break;
+				}
+				return ret;
+			}
+
+			function startSakura() {
+
+				requestAnimationFrame = window.requestAnimationFrame ||
+					window.mozRequestAnimationFrame ||
+					window.webkitRequestAnimationFrame ||
+					window.msRequestAnimationFrame ||
+					window.oRequestAnimationFrame;
+				var canvas = document.createElement('canvas'),
+					cxt;
+				staticx = true;
+				canvas.height = window.innerHeight;
+				canvas.width = window.innerWidth;
+				canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;');
+				canvas.setAttribute('id', 'canvas_sakura');
+				document.getElementsByTagName('body')[0].appendChild(canvas);
+				cxt = canvas.getContext('2d');
+				var sakuraList = new SakuraList();
+				for(var i = 0; i < 50; i++) {
+					var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
+					randomX = getRandom('x');
+					randomY = getRandom('y');
+					randomR = getRandom('r');
+					randomS = getRandom('s');
+					randomFnx = getRandom('fnx');
+					randomFny = getRandom('fny');
+					randomFnR = getRandom('fnr');
+					sakura = new Sakura(randomX, randomY, randomS, randomR, {
+						x: randomFnx,
+						y: randomFny,
+						r: randomFnR
+					});
+					sakura.draw(cxt);
+					sakuraList.push(sakura);
+				}
+				stop = requestAnimationFrame(function() {
+					cxt.clearRect(0, 0, canvas.width, canvas.height);
+					sakuraList.update();
+					sakuraList.draw(cxt);
+					stop = requestAnimationFrame(arguments.callee);
+				})
+			}
+
+			window.onresize = function() {
+				var canvasSnow = document.getElementById('canvas_snow');
+				canvasSnow.width = window.innerWidth;
+				canvasSnow.height = window.innerHeight;
+			}
+
+			img.onload = function() {
+				startSakura();
+			}
+
+			function stopp() {
+				if(staticx) {
+					var child = document.getElementById("canvas_sakura");
+					child.parentNode.removeChild(child);
+					window.cancelAnimationFrame(stop);
+					staticx = false;
+				} else {
+					startSakura();
+				}
+			}
+		
+
+
+//////////////////////////////////////////////////////////////
+
+        </script>
+	</body>
 </html>
