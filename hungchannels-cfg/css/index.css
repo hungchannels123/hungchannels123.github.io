@@ -11,17 +11,10 @@
           ANIMATION
 ✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
 */
-#particles-js {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -100;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat; /* Useful when using a texture */
-}
+
+
 :root {
-    --bgColor: #223344; 
+    --bgColor: #223344;
     --bgColor2: #090a0f;
     --accentColor: #FFF;
     --font: 'Karla', sans-serif;
@@ -39,14 +32,159 @@
   user-select: none;
 }
 body {
-/*background-color: #000;*/
-background-image: url('https://api.ipxi.cn/wp/api.php'); 
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
 position: relative;
-font-family: Concert One;
+  scroll-behaviour: smooth;
+  font-family: Concert One;
 }
+.Border {
+    font-size: 12px;
+    position: relative;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 80px;
+  background-color: #222;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 0px;
+  margin: 8px;
+  border-style: double;
+  border-radius: 15px;
+  border-color: rgb(236, 11, 11);
+  border-width: 2px;
+  animation-name: bodyborder;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: right;
+}
+.BlurWebs {
+  animation: blur 3s linear 1 0s forwards;
+}
+
+
+/*
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+          THANH BAR
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff00ff; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffbc; 
+}
+
+/*
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+        HOME THANHDIEU
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+*/
+.MangXaHoiFtThanhDieu div {
+  border: 2px solid white;
+  border-radius: 7px; 
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer;  
+  width: 43%;
+  margin: auto 29%;
+  transition: 0.5s;
+  text-align: center;
+  text-shadow: -1px 0 5px CYAN, 
+               0 1px 5px RED, 
+               1px 0 5px CYAN, 
+               0 -1px 5px RED;
+}
+.MangXaHoiFtThanhDieu:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.MangXaHoiFtThanhDieu div:not(:last-child) {
+  border-right: none; 
+}
+.MangXaHoiFtThanhDieu div:hover {
+  transform: translateY(-3px);
+  transition: 0.5s;
+}
+.Tiktok {
+  transform: scale(1.01);
+  position: relative;
+  background-color: black;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px; /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
+.Facebook { 
+  position: relative;
+  background-color: black;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px; /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
+.Discord {
+  position: relative;
+  background-color: black;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px; /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.Telegram{
+  position: relative;
+  background-color: black;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px; /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
+
 
 /*
 ✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
@@ -93,6 +231,140 @@ font-family: Concert One;
   color: #00CC33;
   margin-top: 5px;
 }
+
+/*
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+        BO TRÒN AVATAR
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+*/
+.Blob {
+  background: black;
+  border-radius: 50%;
+  margin: 10px;
+  height: 150px;
+  width: 150px; 
+  box-shadow: 0 1px 13px lime;
+  transform: scale(.5);
+  animation: pulse 2s infinite;
+  margin-top: 50px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.99);
+    box-shadow: 0 1px 13px cyan;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 1px 13px lime;
+  }
+  100% {
+    transform: scale(0.99);
+    box-shadow: 0 1px 13px magenta;
+  }
+}
+/*
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+           TEXTS
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+*/
+
+.TieuSu {
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#userName {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.25;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+hr.ThanhGachNgang {
+  border: 0.5px solid #FFFFFF; 
+  border-style: double;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.Trang {
+  color: white;
+  -webkit-mask: linear-gradient(-60deg,
+                                white 30%,
+                                #0004,
+                                white 70%) 
+                                right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 1s infinite;
+}
+
+/*
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+           CHÂN TRANG
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+*/
+.Cuoi {
+  padding: 40px 0;
+  color: #ffffff;
+}
+.Footer .ThanhDieuFtCopyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 20px;
+  color: #aaa;
+  margin-bottom: 0;
+
+}
+
+
+.rainbow {
+margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 0;
+  animation: colorRotate 2.5s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #FFFFFF;
+  }
+  10% {
+    color: #FF0000;
+  }
+  30% {
+    color: #00FF00;
+  }
+  45% {
+    color: #0000FF;
+  }
+  55% {
+    color: #FFFF00;
+  }
+  65% {
+    color: #00FFFF;
+  }
+
+  75% {
+    color: #00FF00;
+  }
+
+   85% {
+    color: #0000FF;
+  }
+   100% {
+    color: #FF66CC;
+  }
+}
+
 /*
 ✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
             NAV
@@ -102,111 +374,54 @@ font-family: Concert One;
   overflow: hidden; 
 }
 .Topnav a {
-  text-decoration: none;
+  font-family: 'ZCOOL QingKe HuangYou';
   float: left;
   display: block;
-  color: rgb(34, 255, 100);
+  color: pink;
   text-align: center;
-  padding: 8px 10px;
+  padding: 12px 14px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
   border-bottom: 3px solid transparent;
 }
 .Topnav a:hover {
-  border-bottom: 3px solid #ffe600;
+  border-bottom: 3px solid #00ffff;
   margin-left: 2px;
   transition: 0.5s;
 }
 .Topnav a.Active { 
-  border-bottom: 3px solid #e100ff;
+  border-bottom: 3px solid #00ff00;
   margin-left: 5px;
 }
-.HideLoader {
+
+/*
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+      THÔNG BÁO TOAST
+✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
+*/
+#Toast {
+  font-size: 17px;
   visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 3s, opacity 2s linear;
-}
-.LoaderCover {
+  min-width: 225px;
+  margin-left: -125px;
+  background-color: #333;
+  color: cyan;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid cyan;
+  padding: 16px;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(
-    circle farthest-corner at center,
-    #2f3136 0%,
-    black 100%
-  );
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-family: Audiowide;
 }
-.Loader {
-  position: absolute;
-  top: calc(50% - 64px);
-  left: calc(50% - 64px);
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
-  perspective: 800px;
+#Toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
-.Spinner {
-  position: absolute;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-/*.Spinner_1 {
-  background-image: url();
-}*/
-.lds-ripple {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-ripple div {
-  position: absolute;
-  border: 4px solid #fff;
-  opacity: 1;
-  border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.1, 0.2, 1) infinite;
-}
-.lds-ripple div:nth-child(2) {
-  animation-delay: -0.5s;
-}
-@keyframes lds-ripple {
-  0% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  4.9% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  5% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-  100% {
-    top: 0px;
-    left: 0px;
-    width: 72px;
-    height: 72px;
-    opacity: 0;
-  }
-}
+
 
 /*
 ✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
@@ -225,20 +440,18 @@ font-family: Concert One;
   background-color: #252525;
   color: #fff;
 }
-.Credit_Source {
-  display: none;
-}
+
 /*
 ✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
         KEY FRAMES
 ✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
 */
 @keyframes bodyborder {
-  20%{border-color: rgb(0, 60, 255);}
+  20%{border-color: cyan;}
   40%{border-color: lime;}
   60%{border-color: red;}
   80%{border-color: yellow;}
-  90%{border-color: rgb(255, 0, 221);}
+  90%{border-color: orange;}
 }
 @keyframes shimmer {
   100%{-webkit-mask-position: left;}
@@ -882,7 +1095,18 @@ font-family: Concert One;
   }
 }
 
+
+
+
+
 /*********************************GLOBAL START********************************/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .heading {
   text-align: center;
@@ -994,17 +1218,32 @@ background-color: #050303;
     justify-content: center;
   }
 }
+
+
+
 .NameFtThanhDieu {
   color: #FFFFFF;
   padding: 0;
   font-size: 22px;
   line-height: 1.8;
   margin-bottom: 0;
-  text-shadow: 3px 0 8px white;
+text-shadow: -1px 0 5px CYAN, 
+               0 1px 5px RED, 
+               1px 0 5px CYAN, 
+               0 -1px 5px RED;
 }
 
-  .italic { font-style: italic;}
 
+  .italic { font-style: italic;}
+p1 {
+
+  font-family: 'Cursive';
+}
+p {
+
+font-family: 'Serif';
+
+}
 h3 {
   font-weight: bold;
 font-family: 'Lobster';
@@ -1022,14 +1261,12 @@ font-family: 'Lobster';
   background-color: rgb(108, 108, 229);
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
+
 
 /*********************************
 SKILLS START
 *********************************/
+
 .skills {
 
 }
@@ -1097,35 +1334,6 @@ SKILLS START
   transform: translateX(50%) rotate(45deg);
   border-radius: 2px;
 }
+
 /**********************************SKILLS END**********************************/
-.typed-cursor{
-  opacity: 1;
-}
-.typed-cursor.typed-cursor--blink{
-  animation: typedjsBlink 0.7s infinite;
-  -webkit-animation: typedjsBlink 0.7s infinite;
-          animation: typedjsBlink 0.7s infinite;
-}
-@keyframes typedjsBlink{
-  50% { opacity: 0.0; }
-}
-@-webkit-keyframes typedjsBlink{
-  0% { opacity: 1; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1; }
-}
-.BoxAboutMe {
-  padding: 20px;
-  text-shadow: 4px 2px 10px #050303;
-  background:transparent; /* Chỉnh màu background About me, mặc định là trong suốt chỉnh màu lại cho nó tương thích với giao diện nếu muốn */
-  color: #fff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  font-family: Rowdies;
-  font-size: 17px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: transform 250ms;
-}
+
