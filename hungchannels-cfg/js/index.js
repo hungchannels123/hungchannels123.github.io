@@ -16,7 +16,7 @@ function Tiktok() {
 }
 function Facebook() {
   setTimeout(function() {
-    window.open('https://www.facebook.com/HungChannels.TV', '_blank')},
+    window.open('https://www.facebook.com/hungchannels.tv', '_blank')},
   100);
 }
 function Discord() {
