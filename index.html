@@ -163,17 +163,25 @@
 			</div>
 		</div>
 		<script>
-			var audio = new Audio('./hungchannels/electrolight-symbolism1.mp3');
-      
-			audio.oncanplaythrough = function(){
-			audio.play();
+			const HungChannels_List = [
+    			"./hungchannels/chacemdaquenroi-speedup.mp3",
+    			"./hungchannels/chayvenoiphiaanh.mp3",
+    			"./hungchannels/andypanda-kasandra.mp3",
+    			"./hungchannels/nhugiovoimay-dinhdaivu.mp3",
+    			"./hungchannels/somewhereonlyweknow-rhianne.mp3",
+    			"./hungchannels/t3nzu-driveforever.mp3",
+    			"./hungchannels/tatu-allthethingsshesaid.mp3",
+    			"./hungchannels/thucgiac-dalab.mp3",
+    			"./hungchannels/xcho-%D0%A2%D1%8B%20%D0%B8%20%D0%AF.mp3",
+    			"./hungchannels/electrolight-symbolism1.mp3"
+			];
+			//Random music
+			let index = Math.floor(Math.random() * HungChannels_List.length);
+			const audio = new Audio(HungChannels_List[index]);
+			function HungChannelsAudio() {
+			   audio.play();
 			}
-			
 			audio.loop = true;
-			
-			audio.onended = function(){
-			audio.play();
-			}
 		</script>
         <script>
 
