@@ -27,10 +27,30 @@
 				*zoom: 1;
 			}
 
-			body {
+			/* body {
 				background: url(https://www.dmoe.cc/random.php) no-repeat;
 				background-size: cover;
 				background-attachment: fixed;
+			} */
+			.video {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+			}
+
+			@media (min-aspect-ratio: 16/9) {
+				.video {
+					width: auto;
+					height: auto;
+				}
+			}
+
+			@media (max-aspect-ratio: 16/9) {
+				.video {
+					width: 100%;
+					height: auto;
+				}
 			}
 
 			.content {
@@ -142,6 +162,9 @@
         <link rel="icon" href="./hchannels-img/avt.png" />
 	</head>
 	<body onclick="audio.play()">	
+		<video autoplay loop muted plays-inline class="video">
+			<source src="./hchannels-img/What's_it_like_to_be_a_sweet_couple.mp4" type="video/mp4">
+		</video>
 		<div class="content">
 			<img src="./hchannels-img/avt.png" alt="">
 			<div class="content_r clearfix">
